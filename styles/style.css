@@ -32,7 +32,7 @@
 
 
 /* Barra lateral derecha fija */
-header nav {
+nav {
   width: 250px;
   min-height: 100vh;
   background: #222e3c;
@@ -47,7 +47,7 @@ header nav {
   padding-top: 0;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -56,15 +56,16 @@ header nav ul {
   width: 100%;
 }
 
-header nav ul li {
+nav ul li {
   font-family: 'Roboto', "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 8px 0;
   padding: 0 12px;
   border-radius: 8px;
+  color: #f0f0f0;
 }
 
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -75,9 +76,28 @@ header nav ul li a {
   width: 100%;
 }
 
-header nav ul li a:hover {
+.sidebar .nav-link {
+  color: #ffffff;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sidebar .nav-link:active {
+  transform: scale(1.2);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+  
+.sidebar .nav-link:hover {
+  text-size-adjust: initial;
   background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
-  color: #4fc3f7;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+nav ul li a:hover {
+  background: linear-gradient(90deg, #2d3a4d 0%, #3a4a63 100%);
+  color: #ffffff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }

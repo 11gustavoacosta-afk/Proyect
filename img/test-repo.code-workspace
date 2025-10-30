@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../test-repo"
+		},
+		{
+			"path": "../pages"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../styles"
+		}
+	],
+	"settings": {}
+}
